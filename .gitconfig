@@ -1,10 +1,5 @@
 [user]
-  name = Chris McCord
-  email = chris@chrismccord.com
-[core]
-	editor = emacsclient -a '' -t
-	excludesfile = /Users/chris/.gitignore
-[color]
-  ui = 1
-[github]
-	user = chrismccord
+	email = kjonesevans@miletwo.us
+	name = Kevin Jones-Evans
+[credential]
+	helper = osxkeychain
