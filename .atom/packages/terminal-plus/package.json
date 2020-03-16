@@ -1,0 +1,57 @@
+{
+  "_from": "https://www.atom.io/api/packages/terminal-plus/versions/0.14.5/tarball",
+  "_id": "terminal-plus@0.14.5",
+  "_inBundle": false,
+  "_integrity": "sha512-cgw7BmntZ4yfiWdn05XtN5jfvNAXtzQ6ibwVCBwis68Fw1wr9OX9ISFc6h6/b9/SDvTsBvUl4nFLmiCEUyAa4Q==",
+  "_location": "/terminal-plus",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/terminal-plus/versions/0.14.5/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/terminal-plus/versions/0.14.5/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/terminal-plus/versions/0.14.5/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/terminal-plus/versions/0.14.5/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/terminal-plus/versions/0.14.5/tarball",
+  "_shasum": "f6fde68a4be3c007587d392e80f6363448396322",
+  "_spec": "https://www.atom.io/api/packages/terminal-plus/versions/0.14.5/tarball",
+  "_where": "C:\\Users\\KJONES~1\\AppData\\Local\\Temp\\apm-install-dir-12003-44320-16ai7dd.ku1z",
+  "author": {
+    "name": "Jeremy Ebneyamin"
+  },
+  "bugs": {
+    "url": "https://github.com/jeremyramin/terminal-plus/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "atom-space-pen-views": "^2.1.0",
+    "pty.js": "git+https://github.com/jeremyramin/pty.js.git#28f2667",
+    "term.js": "git+https://github.com/jeremyramin/term.js.git",
+    "underscore": "^1.8.3"
+  },
+  "deprecated": false,
+  "description": "A terminal package for Atom, complete with themes and more.",
+  "engines": {
+    "atom": ">=1.2.0"
+  },
+  "homepage": "https://atom.io/packages/terminal-plus",
+  "keywords": [
+    "terminal-plus",
+    "terminal",
+    "plus",
+    "panel",
+    "tty"
+  ],
+  "license": "MIT",
+  "main": "./lib/terminal-plus",
+  "name": "terminal-plus",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeremyramin/terminal-plus.git"
+  },
+  "version": "0.14.5"
+}

@@ -1,0 +1,12 @@
+# For more detailed documentation see
+# https://atom.io/docs/latest/behind-atom-keymaps-in-depth
+
+# windows and linux
+'.platform-win32 atom-workspace, .platform-linux atom-workspace':
+  'f6': 'gcc-make-run:compile-run'
+  'ctrl-f6': 'gcc-make-run:run-options'
+
+# darwin
+'.platform-darwin atom-workspace':
+  'f6': 'gcc-make-run:compile-run'
+  'cmd-f6': 'gcc-make-run:run-options'

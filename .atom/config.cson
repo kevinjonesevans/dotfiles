@@ -1,0 +1,31 @@
+"*":
+  "activate-power-mode":
+    comboMode:
+      enabled: false
+      multiplier: false
+    plugins:
+      playAudio: true
+      screenShake: true
+    screenShake:
+      enabled: false
+  "autocomplete-plus": {}
+  "better-git-blame":
+    searchInLayerEnabled: false
+  core:
+    disabledPackages: [
+      "remote-edit"
+      "activate-power-mode"
+    ]
+    telemetryConsent: "no"
+    uriHandlerRegistration: "always"
+  editor:
+    showInvisibles: true
+    softWrap: true
+  "exception-reporting":
+    userId: "0847b1b5-9dda-480f-baa1-498653ff731f"
+  minimap: {}
+  "terminal-plus":
+    core:
+      mapTerminalsTo: "Folder"
+  welcome:
+    showOnStartup: false

@@ -1,0 +1,301 @@
+// The ui-variables file is provided by base themes provided by Atom.
+//
+// See https://github.com/atom/atom-dark-ui/blob/master/styles/ui-variables.less
+// for a full listing of what's available.
+@import "ui-variables";
+
+.label-highlight {
+  transform: translate3d(0, -19px, 0);
+  right: 0;
+  padding-right:5px;
+  text-align: right;
+  .icon::before{
+    margin-top: 1px;
+  }
+  .highlight-label {
+    display: block;
+    float: right;
+  }
+}
+
+@tooltip-border-radius: 5px;
+
+@highlight-color: fade(contrast(
+        @base-background-color,
+        lighten(@base-background-color, 40%),
+        darken(@base-background-color, 40%)
+), 20%);
+
+.layer-tooltip {
+  font-size: @font-size;
+  background: @pane-item-background-color;
+  border-radius: @tooltip-border-radius;
+  border: 1px solid @pane-item-border-color;
+  box-shadow: 1px 1px 5px 1px fade(darken(@pane-item-border-color, 1%), 40%);
+  min-width: 440px;
+  max-width: 500px;
+  overflow: hidden;
+  .red {
+    color: #9E2C3E;
+  }
+  .green {
+    color: #0A6247;
+  }
+  .section{
+    border-bottom: 1px solid @pane-item-border-color;
+    padding: 7px !important;
+    display:flex;
+  }
+  .section:first-child {
+    border-radius: @tooltip-border-radius @tooltip-border-radius 0 0;
+  }
+  .section:last-child {
+    border-radius: 0 0 @tooltip-border-radius @tooltip-border-radius;
+  }
+  .powered-by{
+    text-align: right;
+    line-height: 1.2;
+    background-color: contrast(
+            @pane-item-background-color,
+            lighten(@pane-item-background-color, 3%),
+            darken(@pane-item-background-color, 3%)
+    );
+  }
+  .section-content {
+    width: 100%;
+    .white {
+      color: @text-color-highlight;
+    }
+    .layer-button{
+      position: absolute;
+      bottom: 14px;
+      right: 10px;
+    }
+    .section-title {
+      line-height:1.2;
+      margin:0;
+      padding:0;
+      margin-bottom: 5px;
+      font-size: 1.2em;
+      color: @text-color;
+      white-space: nowrap;
+      max-width: 90%;
+      overflow-x: hidden;
+      overflow-y: hidden;
+      text-overflow: ellipsis;
+      .build-status{
+        float: right;
+        vertical-align: middle;
+      }
+    }
+    .section-status {
+      span{
+        margin-left: 3px;
+      }
+      .icon::before{
+        margin-right: 2px;
+      }
+      line-height:1.2;
+      text-transform: capitalize;
+      vertical-align: middle;
+      position: absolute;
+      right: 10px;
+      bottom: 9px;
+    }
+    .build-status {
+      .icon::before{
+        margin-right: 0;
+      }
+      position: absolute;
+      right: 10px;
+      top: 5px;
+    }
+    .section-body{
+      .icon::before{
+        font-size: 14px;
+      }
+      max-width: 85%;
+      line-height:1.2;
+      margin:0;
+      padding:1px 0;
+      color: fade(@text-color, 80%);
+      .commit-hash-link {
+        background: none;
+        border: none;
+      }
+    }
+    .layer-icon{
+      width: auto;
+      height: 16px;
+      vertical-align: middle;
+    }
+  }
+  .age-graph{
+    margin: 0 auto;
+    padding: 0 2px;
+    width:100%;
+    position: relative;
+    .rail {
+      height:10px;
+      width: 100%;
+      background: blue;
+      margin: 0 auto;
+      border-radius: 20px;
+      border: 1px solid @base-border-color;
+      position: relative;
+      background: linear-gradient(
+        90deg,
+        rgb(63, 116, 212),
+        rgb(60, 125, 199),
+        rgb(55, 136, 228),
+        rgb(78, 161, 216),
+        rgb(83, 175, 202),
+        rgb(96, 202, 197),
+        rgb(127, 225, 221),
+        rgb(167, 239, 236),
+        rgb(203, 248, 247),
+        rgb(255, 255, 255),
+        rgb(253, 245, 234),
+        rgb(251, 231, 204),
+        rgb(246, 208, 158),
+        rgb(243, 179, 99),
+        rgb(240, 159, 96),
+        rgb(240, 141, 89),
+        rgb(239, 128, 88),
+        rgb(238, 115, 73),
+        rgb(237, 98, 59),
+        rgb(235, 62, 37)
+      );
+      .tick {
+        display: block;
+        position: absolute;
+        bottom: -7px;
+        background: @text-color;
+        border-radius: 0 0 10px 10px;
+        border: 0px solid;
+        height: 6px;
+        width: 2px;
+      }
+    }
+    .tight {
+      margin-top: 1px !important;
+    }
+    .markers{
+      margin: 5px 0;
+      display: flex;
+      flex-direction: row;
+      font-family: sans-serif;
+      width: 100%;
+      h1 {
+        line-height:1.2;
+        margin:0;
+        padding:0;
+        margin-bottom: 5px;
+        font-size: 1.2em;
+        color: @text-color;
+      }
+      h3, p {
+        margin:0;
+        padding:0;
+        margin-bottom: 4px;
+      }
+      p {
+        margin-bottom: 0;
+      }
+      code {
+        @include atom-text-editor;
+        color: fade(@text-color, 40%);
+        padding: 0;
+        background: none;
+      }
+      .start {
+        flex: 1;
+        text-align: left;
+        .start-inner{
+          float: left;
+          display:inline-block;
+        }
+      }
+      .end {
+        flex: 1;
+        text-align: right;
+        .end-inner{
+          float: right;
+          display: inline-block;
+        }
+      }
+      .point {
+        flex: 0;
+        text-align: center;
+        white-space: nowrap;
+        margin-left: 65%;
+        position: relative;
+        .icon::before{
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+atom-text-editor {
+  .line-highlight {
+    transition: all 0.2s linear;
+    background-color: @highlight-color;
+    position: relative;
+  }
+  .pr-line-highlight {
+    transition: all 0.2s linear;
+    background-color: fade(@highlight-color, 10);
+    position: relative;
+    opacity: 0.8;
+  }
+  .gutter[gutter-name="layer"] {
+    border-right: 1px solid @base-border-color;
+  }
+  .layer-resize-handle {
+    position: absolute;
+    width: 1px;
+    background: transparent;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    cursor: col-resize;
+  }
+  .layer-gutter {
+    width: 100%;
+    transition: background-color 0.1s linear;
+    &:hover {
+      background-color: @highlight-color !important;
+    }
+    .layer-gutter-item {
+      overflow-x: hidden;
+      box-sizing: border-box;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      width: 100%;
+      text-align: left;
+      transition: 0.3s background;
+      position: relative;
+      .gutter-text{
+        width: 100%;
+        padding: 0 5px 0 5px;
+      }
+      .gutter-age{
+        width: 5px;
+        background: red;
+        position: absolute;
+        right:0;
+        top:0;
+        bottom:0;
+      }
+    }
+  }
+  .layer-gutter:nth-child(even) {
+    background-color: fade(contrast(
+      @text-color,
+      lighten(@base-background-color, 20%),
+      darken(@base-background-color, 20%)
+    ), 8%);
+  }
+}

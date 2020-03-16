@@ -1,0 +1,88 @@
+{
+  "_from": "https://www.atom.io/api/packages/autocomplete-cmake/versions/0.3.1/tarball",
+  "_id": "autocomplete-cmake@0.3.1",
+  "_inBundle": false,
+  "_integrity": "sha512-TcfDDbkytEmWcSUDppnUIxgUzPqGs6ughyeIi4VF8OopacKQRkHRRNtZjqQql+MIi4DNow8psOMB+dv6HSCKow==",
+  "_location": "/autocomplete-cmake",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/autocomplete-cmake/versions/0.3.1/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/autocomplete-cmake/versions/0.3.1/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/autocomplete-cmake/versions/0.3.1/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/autocomplete-cmake/versions/0.3.1/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/autocomplete-cmake/versions/0.3.1/tarball",
+  "_shasum": "2e4ac86b870796f919ad14821ba1efc209968943",
+  "_spec": "https://www.atom.io/api/packages/autocomplete-cmake/versions/0.3.1/tarball",
+  "_where": "C:\\Users\\KJONES~1\\AppData\\Local\\Temp\\apm-install-dir-120010-30348-cv5hm3.f60u5",
+  "bugs": {
+    "url": "https://github.com/NealRame/autocomplete-cmake/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "fuzzaldrin": "^2.1.0"
+  },
+  "deprecated": false,
+  "description": "An Autocomplete Plus provider for CMake.",
+  "devDependencies": {
+    "eslint": "^1.8.0"
+  },
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "eslintConfig": {
+    "extends": "eslint:recommended",
+    "env": {
+      "browser": true,
+      "es6": true,
+      "node": true
+    },
+    "ecmaFeatures": {
+      "modules": true
+    },
+    "rules": {
+      "camelcase": 0,
+      "curly": [
+        1,
+        "multi-line"
+      ],
+      "new-cap": [
+        1,
+        {
+          "newIsCap": true,
+          "capIsNew": false
+        }
+      ],
+      "quotes": [
+        1,
+        "single"
+      ],
+      "space-infix-ops": 0,
+      "strict": [
+        2,
+        "global"
+      ]
+    }
+  },
+  "homepage": "https://github.com/NealRame/autocomplete-cmake#readme",
+  "license": "MIT",
+  "main": "./lib/autocomplete-cmake",
+  "name": "autocomplete-cmake",
+  "providedServices": {
+    "autocomplete.provider": {
+      "versions": {
+        "2.0.0": "getProvider"
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NealRame/autocomplete-cmake.git"
+  },
+  "version": "0.3.1"
+}

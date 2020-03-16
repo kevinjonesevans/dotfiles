@@ -1,0 +1,62 @@
+{
+  "_from": "https://www.atom.io/api/packages/activate-power-mode/versions/2.7.0/tarball",
+  "_id": "activate-power-mode@2.7.0",
+  "_inBundle": false,
+  "_integrity": "sha512-aggwUdqB18X4DTce69WUJeSaQOl8//EjMddxKACAZ7zTLXKv7rfROPFnAZNajNwgPF29tGSMgerOaBSBDupo6g==",
+  "_location": "/activate-power-mode",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/activate-power-mode/versions/2.7.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/activate-power-mode/versions/2.7.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/activate-power-mode/versions/2.7.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/activate-power-mode/versions/2.7.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/activate-power-mode/versions/2.7.0/tarball",
+  "_shasum": "36da0f39ec385a33dad93f74243490f5b3085f01",
+  "_spec": "https://www.atom.io/api/packages/activate-power-mode/versions/2.7.0/tarball",
+  "_where": "C:\\Users\\KJONES~1\\AppData\\Local\\Temp\\apm-install-dir-12009-25720-1hc9jvq.x4d",
+  "author": {
+    "name": "Joel Besada",
+    "email": "joel@joelb.me",
+    "url": "http://joelb.me"
+  },
+  "bugs": {
+    "url": "https://github.com/JoelBesada/activate-power-mode/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "atom-select-list": "^0.2.0",
+    "lodash.debounce": "^4.0.8",
+    "lodash.random": "^3.1.5",
+    "lodash.sample": "^4.2.1",
+    "lodash.throttle": "^4.0.1"
+  },
+  "deprecated": false,
+  "description": "Activate POWER MODE to write your code in style.",
+  "engines": {
+    "atom": ">=1.19.0 <2.0.0"
+  },
+  "homepage": "https://github.com/JoelBesada/activate-power-mode#readme",
+  "keywords": [],
+  "license": "MIT",
+  "main": "./lib/activate-power-mode",
+  "name": "activate-power-mode",
+  "providedServices": {
+    "activate-power-mode": {
+      "description": "Provide an API to add plugins, effects and flows.",
+      "versions": {
+        "1.0.0": "provideServiceV1"
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoelBesada/activate-power-mode.git"
+  },
+  "version": "2.7.0"
+}

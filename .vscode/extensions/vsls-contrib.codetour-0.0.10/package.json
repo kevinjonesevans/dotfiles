@@ -1,0 +1,376 @@
+{
+	"name": "codetour",
+	"displayName": "CodeTour",
+	"description": "VS Code extension that allows you to record and playback guided tours of codebases, directly within the editor",
+	"publisher": "vsls-contrib",
+	"version": "0.0.10",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/vsls-contrib/codetour"
+	},
+	"bugs": {
+		"url": "https://github.com/vsls-contrib/codetour/issues"
+	},
+	"homepage": "https://github.com/vsls-contrib/codetour#readme",
+	"license": "ISC",
+	"icon": "images/icon.png",
+	"engines": {
+		"vscode": "^1.42.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"keywords": [
+		"Collaboration",
+		"Sharing"
+	],
+	"extensionKind": [
+		"workspace",
+		"ui"
+	],
+	"activationEvents": [
+		"*"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "codetour.addTourStep",
+				"title": "Add Step to Tour",
+				"enablement": "!commentIsEmpty"
+			},
+			{
+				"command": "codetour.changeTourDescription",
+				"title": "Change Description"
+			},
+			{
+				"command": "codetour.changeTourRef",
+				"title": "Change Git Ref"
+			},
+			{
+				"command": "codetour.changeTourTitle",
+				"title": "Change Title"
+			},
+			{
+				"command": "codetour.deleteTour",
+				"title": "Delete Tour"
+			},
+			{
+				"command": "codetour.deleteTourStep",
+				"title": "Delete Step"
+			},
+			{
+				"command": "codetour.editTour",
+				"title": "Edit Tour",
+				"category": "CodeTour",
+				"icon": "$(edit)"
+			},
+			{
+				"command": "codetour.editTourStep",
+				"title": "Edit Step"
+			},
+			{
+				"command": "codetour.endTour",
+				"title": "End Tour",
+				"category": "CodeTour",
+				"icon": "$(debug-stop)"
+			},
+			{
+				"command": "codetour.moveTourStepBack",
+				"title": "Move Up",
+				"icon": "$(arrow-up)"
+			},
+			{
+				"command": "codetour.moveTourStepForward",
+				"title": "Move Down",
+				"icon": "$(arrow-down)"
+			},
+			{
+				"command": "codetour.nextTourStep",
+				"title": "Next",
+				"icon": "$(arrow-right)"
+			},
+			{
+				"command": "codetour.previousTourStep",
+				"title": "Previous",
+				"icon": "$(arrow-left)"
+			},
+			{
+				"command": "codetour.recordTour",
+				"title": "Record Tour",
+				"category": "CodeTour",
+				"icon": "$(add)"
+			},
+			{
+				"command": "codetour.refreshTours",
+				"title": "Refresh Tours",
+				"category": "CodeTour"
+			},
+			{
+				"command": "codetour.resumeTour",
+				"title": "Resume Tour",
+				"category": "CodeTour"
+			},
+			{
+				"command": "codetour.saveTourStep",
+				"title": "Save Step"
+			},
+			{
+				"command": "codetour.startTour",
+				"title": "Start Tour",
+				"category": "CodeTour",
+				"icon": "$(debug-start)"
+			}
+		],
+		"menus": {
+			"commandPalette": [
+				{
+					"command": "codetour.editTour",
+					"when": "codetour:inTour && !codetour:recording"
+				},
+				{
+					"command": "codetour.endTour",
+					"when": "codetour:inTour"
+				},
+				{
+					"command": "codetour.resumeTour",
+					"when": "codetour:inTour"
+				},
+				{
+					"command": "codetour.startTour",
+					"when": "codetour:hasTours"
+				},
+				{
+					"command": "codetour.addTourStep",
+					"when": "false"
+				},
+				{
+					"command": "codetour.changeTourRef",
+					"when": "false"
+				},
+				{
+					"command": "codetour.changeTourTitle",
+					"when": "false"
+				},
+				{
+					"command": "codetour.changeTourDescription",
+					"when": "false"
+				},
+				{
+					"command": "codetour.deleteTour",
+					"when": "false"
+				},
+				{
+					"command": "codetour.deleteTourStep",
+					"when": "false"
+				},
+				{
+					"command": "codetour.editTourStep",
+					"when": "false"
+				},
+				{
+					"command": "codetour.nextTourStep",
+					"when": "false"
+				},
+				{
+					"command": "codetour.previousTourStep",
+					"when": "false"
+				},
+				{
+					"command": "codetour.saveTourStep",
+					"when": "false"
+				}
+			],
+			"comments/commentThread/title": [
+				{
+					"command": "codetour.previousTourStep",
+					"group": "inline@1",
+					"when": "commentController == codetour && commentThread =~ /hasPrevious/"
+				},
+				{
+					"command": "codetour.nextTourStep",
+					"group": "inline@2",
+					"when": "commentController == codetour && commentThread =~ /hasNext/"
+				},
+				{
+					"command": "codetour.endTour",
+					"group": "inline@3",
+					"when": "commentController == codetour"
+				},
+				{
+					"command": "codetour.editTour",
+					"group": "inline@4",
+					"when": "commentController == codetour && !codetour:recording"
+				}
+			],
+			"comments/commentThread/context": [
+				{
+					"command": "codetour.addTourStep",
+					"group": "inline",
+					"when": "commentController == codetour && commentThreadIsEmpty"
+				}
+			],
+			"comments/comment/title": [
+				{
+					"command": "codetour.moveTourStepBack",
+					"group": "move@1",
+					"when": "commentController == codetour && codetour:recording && commentThread =~ /hasPrevious/"
+				},
+				{
+					"command": "codetour.moveTourStepForward",
+					"group": "move@2",
+					"when": "commentController == codetour && codetour:recording && commentThread =~ /hasNext/"
+				},
+				{
+					"command": "codetour.editTourStep",
+					"group": "mutate@1",
+					"when": "commentController == codetour && codetour:recording"
+				},
+				{
+					"command": "codetour.deleteTourStep",
+					"group": "mutate@2",
+					"when": "commentController == codetour && codetour:recording"
+				}
+			],
+			"comments/comment/context": [
+				{
+					"command": "codetour.saveTourStep",
+					"group": "inline@2",
+					"when": "commentController == codetour && codetour:recording"
+				}
+			],
+			"view/title": [
+				{
+					"command": "codetour.recordTour",
+					"when": "view == codetour.tours",
+					"group": "navigation"
+				}
+			],
+			"view/item/context": [
+				{
+					"command": "codetour.endTour",
+					"when": "viewItem =~ /codetour.tour(.recording)?.active/",
+					"group": "inline@1"
+				},
+				{
+					"command": "codetour.startTour",
+					"when": "viewItem == codetour.tour",
+					"group": "inline@2"
+				},
+				{
+					"command": "codetour.resumeTour",
+					"when": "viewItem =~ /codetour.tour(.recording)?.active$/",
+					"group": "active@1"
+				},
+				{
+					"command": "codetour.endTour",
+					"when": "viewItem =~ /codetour.tour(.recording)?.active$/",
+					"group": "active@2"
+				},
+				{
+					"command": "codetour.startTour",
+					"when": "viewItem == codetour.tour",
+					"group": "basic@1"
+				},
+				{
+					"command": "codetour.changeTourTitle",
+					"when": "viewItem =~ /^codetour.tour(.recording)?(.active)?$/",
+					"group": "change@1"
+				},
+				{
+					"command": "codetour.changeTourDescription",
+					"when": "viewItem =~ /^codetour.tour(.recording)?(.active)?$/",
+					"group": "change@2"
+				},
+				{
+					"command": "codetour.changeTourRef",
+					"when": "viewItem =~ /^codetour.tour(.recording)?(.active)?$/ && gitOpenRepositoryCount != 0",
+					"group": "change@3"
+				},
+				{
+					"command": "codetour.editTour",
+					"when": "viewItem =~ /^codetour.tour(.active)?$/",
+					"group": "edit@1"
+				},
+				{
+					"command": "codetour.deleteTour",
+					"when": "viewItem =~ /^codetour.tour(.recording)?(.active)?$/",
+					"group": "edit@2"
+				},
+				{
+					"command": "codetour.moveTourStepBack",
+					"when": "viewItem =~ /^codetour.tourStep.hasPrevious/",
+					"group": "inline@1"
+				},
+				{
+					"command": "codetour.moveTourStepForward",
+					"when": "viewItem =~ /codetour.tourStep.*(.hasNext)/",
+					"group": "inline@2"
+				},
+				{
+					"command": "codetour.moveTourStepBack",
+					"when": "viewItem =~ /^codetour.tourStep.hasPrevious/",
+					"group": "basic@1"
+				},
+				{
+					"command": "codetour.moveTourStepForward",
+					"when": "viewItem =~ /codetour.tourStep.*(.hasNext)/",
+					"group": "basic@2"
+				},
+				{
+					"command": "codetour.deleteTourStep",
+					"when": "viewItem =~ /^codetour.tourStep/",
+					"group": "manage@1"
+				}
+			]
+		},
+		"views": {
+			"explorer": [
+				{
+					"id": "codetour.tours",
+					"name": "CodeTour"
+				}
+			]
+		},
+		"jsonValidation": [
+			{
+				"fileMatch": "(code)?tour.json",
+				"url": "https://cdn.jsdelivr.net/gh/vsls-contrib/code-tour/schema.json"
+			}
+		],
+		"keybindings": [
+			{
+				"command": "codetour.previousTourStep",
+				"when": "codetour:inTour && !textInputFocus && !terminalFocus",
+				"key": "ctrl+left",
+				"mac": "cmd+left"
+			},
+			{
+				"command": "codetour.nextTourStep",
+				"when": "codetour:inTour && !textInputFocus && !terminalFocus",
+				"key": "ctrl+right",
+				"mac": "cmd+right"
+			}
+		]
+	},
+	"dependencies": {
+		"mobx": "^5.14.2"
+	},
+	"devDependencies": {
+		"typescript": "^3.1.4",
+		"vscode": "^1.1.25",
+		"tslint": "^5.8.0",
+		"@types/node": "^8.10.25"
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"postinstall": "node ./node_modules/vscode/bin/install"
+	},
+	"__metadata": {
+		"id": "1d9b1776-4188-4b43-b23f-bab3d47537e9",
+		"publisherId": "03b54342-c642-4e41-b84d-6a2222e2b060",
+		"publisherDisplayName": "Live Share Contrib"
+	}
+}

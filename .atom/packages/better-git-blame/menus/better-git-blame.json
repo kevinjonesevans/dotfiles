@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Toggle Better Git Blame",
+        "command": "better-git-blame:toggle"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "Better Git Blame",
+          "submenu": [
+            {
+              "label": "Toggle",
+              "command": "better-git-blame:toggle"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

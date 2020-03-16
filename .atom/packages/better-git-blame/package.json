@@ -1,0 +1,84 @@
+{
+  "_from": "https://www.atom.io/api/packages/better-git-blame/versions/0.5.0/tarball",
+  "_id": "better-git-blame@0.5.0",
+  "_inBundle": false,
+  "_integrity": "sha512-Bbi3E3UsdwzeSuv6rT8GULgg3TwTkaTqg1iL+b6OMb72XISKO7zIkBksoKskqe058aE8eeBy/4LLMNb2VbZ7Gg==",
+  "_location": "/better-git-blame",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/better-git-blame/versions/0.5.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/better-git-blame/versions/0.5.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/better-git-blame/versions/0.5.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/better-git-blame/versions/0.5.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/better-git-blame/versions/0.5.0/tarball",
+  "_shasum": "bd1d46ce35cc047f8edd2b7c21b30c4756b5b066",
+  "_spec": "https://www.atom.io/api/packages/better-git-blame/versions/0.5.0/tarball",
+  "_where": "C:\\Users\\KJONES~1\\AppData\\Local\\Temp\\apm-install-dir-12009-59424-39wdac.pjl7e",
+  "bugs": {
+    "url": "https://github.com/Stepsize/atom-better-git-blame/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {},
+  "deprecated": false,
+  "description": "Git blame gutter with pull requests, related issues, and age color-coding of code.",
+  "devDependencies": {
+    "@types/atom": "^0.0.39",
+    "@types/lodash": "^4.14.74",
+    "@types/lowdb": "^0.15.0",
+    "@types/react": "^16.0.5",
+    "@types/react-dom": "^15.5.4",
+    "git-url-parse": ">7.0.0",
+    "install": "^0.10.1",
+    "lodash": "^4.17.4",
+    "lowdb": "^1.0.0",
+    "moment": "^2.18.1",
+    "node-color-gradient": "github:Stepsize/node-color-gradient",
+    "preact": "^8.2.5",
+    "preact-compat": "^3.17.0",
+    "prettier": "^1.6.1",
+    "rollup": "^0.50.0",
+    "rollup-plugin-commonjs": "^8.2.1",
+    "rollup-plugin-json": "^2.3.0",
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "rollup-plugin-re": "^1.0.6",
+    "rollup-plugin-replace": "^2.0.0",
+    "rollup-plugin-typescript": "^0.8.1",
+    "ts-loader": "^2.3.4",
+    "typescript": "^2.5.2",
+    "uuid-v4": "^0.1.0",
+    "webpack": "^3.5.5"
+  },
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/Stepsize/atom-better-git-blame#readme",
+  "keywords": [
+    "git",
+    "blame",
+    "pull-request",
+    "github",
+    "gitlab",
+    "jira",
+    "stepsize",
+    "layer"
+  ],
+  "license": "MIT",
+  "main": "dist/bundle.js",
+  "name": "better-git-blame",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Stepsize/atom-better-git-blame.git"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "tsc --watch",
+    "pretty": "prettier \"lib/**/*.ts\" --write"
+  },
+  "version": "0.5.0"
+}

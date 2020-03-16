@@ -1,0 +1,15 @@
+{
+	"messages": [
+		"The host has shared a server {0} with you. Would you like to view this in the browser?",
+		"Yes",
+		"No",
+		"Cannot open server {0} in browser. The host has unshared the server"
+	],
+	"keys": [
+		"guestServerController-promtHostSharedServer",
+		"guestServerController-yes",
+		"guestServerController-no",
+		"guestServerController-serverUnshared"
+	],
+	"filePath": "src\\servers\\guestServerController"
+}

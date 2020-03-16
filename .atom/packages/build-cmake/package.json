@@ -1,0 +1,60 @@
+{
+  "_from": "https://www.atom.io/api/packages/build-cmake/versions/0.12.0/tarball",
+  "_id": "build-cmake@0.12.0",
+  "_inBundle": false,
+  "_integrity": "sha512-epwi2ix7Wy2GdM/dXf4YzTf4v/tRjP00PsdcYMEepTjeIUiyqm+Q304T79fbIhAa9aIcn380VdrSLkN0hz5i9Q==",
+  "_location": "/build-cmake",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/build-cmake/versions/0.12.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/build-cmake/versions/0.12.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/build-cmake/versions/0.12.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/build-cmake/versions/0.12.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/build-cmake/versions/0.12.0/tarball",
+  "_shasum": "614a164e14d33a1bb6a72a45e3da34248d383572",
+  "_spec": "https://www.atom.io/api/packages/build-cmake/versions/0.12.0/tarball",
+  "_where": "C:\\Users\\KJONES~1\\AppData\\Local\\Temp\\apm-install-dir-119818-115456-a0fx6c.dpxnm",
+  "bugs": {
+    "url": "https://github.com/siegelaaron94/atom-build-cmake/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "glob": "^7.0.3"
+  },
+  "deprecated": false,
+  "description": "Generate and build cmake projects from within Atom.",
+  "devDependencies": {
+    "eslint": "^5.2.0"
+  },
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/siegelaaron94/atom-build-cmake#readme",
+  "keywords": [
+    "cmake",
+    "build",
+    "clang"
+  ],
+  "license": "MIT",
+  "main": "lib/main.js",
+  "name": "build-cmake",
+  "providedServices": {
+    "builder": {
+      "description": "Runs cmake",
+      "versions": {
+        "2.0.0": "provideCMake"
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/siegelaaron94/atom-build-cmake.git"
+  },
+  "version": "0.12.0"
+}

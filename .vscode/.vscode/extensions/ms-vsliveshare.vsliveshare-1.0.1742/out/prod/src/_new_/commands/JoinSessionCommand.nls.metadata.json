@@ -1,0 +1,9 @@
+{
+	"messages": [
+		"This collaboration session is no longer active. Please check the link provided by the host and try again."
+	],
+	"keys": [
+		"CollaborationSessionNoLongerActive"
+	],
+	"filePath": "src\\_new_\\commands\\JoinSessionCommand"
+}

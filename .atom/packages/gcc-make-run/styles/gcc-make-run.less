@@ -1,0 +1,47 @@
+/*
+* modified from rgbkrk/atom-script - styles/script.less
+* https://github.com/rgbkrk/atom-script
+* https://atom.io/packages/script
+*/
+
+// The ui-variables file is provided by base themes provided by Atom.
+//
+// See https://github.com/atom/atom-dark-ui/blob/master/styles/ui-variables.less
+// for a full listing of what's available.
+@import "ui-variables";
+
+.run-options-view {
+  .panel-heading {
+    text-align: center;
+    font-size: 1.25rem;
+  }
+
+  table {
+    width: 100%;
+    margin-top: 5px;
+
+    td {
+      padding: 5px;
+      vertical-align: middle;
+
+      atom-text-editor {
+        width: 99%;
+      }
+    }
+
+    td:first-child {
+      width: 25%;
+      text-align: right;
+    }
+  }
+
+  .btn-group {
+    padding: 0.5rem;
+    display: flex;
+
+    * {
+      flex: 1;
+      padding: 0.2rem;
+    }
+  }
+}

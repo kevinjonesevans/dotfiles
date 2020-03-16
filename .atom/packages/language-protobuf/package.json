@@ -1,0 +1,41 @@
+{
+  "_from": "https://www.atom.io/api/packages/language-protobuf/versions/0.7.1/tarball",
+  "_id": "language-protobuf@0.7.1",
+  "_inBundle": false,
+  "_integrity": "sha512-XUjsfPrIPxfYi02cSmwQsi5guXRO8xfn4RjayPFHoZY4K93C/VXRquIxV3DhZCQEZerNlvEwxANowNFXcuLIdw==",
+  "_location": "/language-protobuf",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/language-protobuf/versions/0.7.1/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/language-protobuf/versions/0.7.1/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/language-protobuf/versions/0.7.1/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/language-protobuf/versions/0.7.1/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/language-protobuf/versions/0.7.1/tarball",
+  "_shasum": "06ff3bb914fdd673db286525129ef240e0bcb094",
+  "_spec": "https://www.atom.io/api/packages/language-protobuf/versions/0.7.1/tarball",
+  "_where": "C:\\Users\\KJONES~1\\AppData\\Local\\Temp\\apm-install-dir-1191012-14884-1sg0mgd.7fvv",
+  "bugs": {
+    "url": "https://github.com/podgib/atom-protobuf/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {},
+  "deprecated": false,
+  "description": "Adds protocol buffer support to atom",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "homepage": "https://github.com/podgib/atom-protobuf#readme",
+  "license": "MIT",
+  "name": "language-protobuf",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/podgib/atom-protobuf.git"
+  },
+  "version": "0.7.1"
+}

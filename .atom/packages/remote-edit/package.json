@@ -1,0 +1,80 @@
+{
+  "_from": "https://www.atom.io/api/packages/remote-edit/versions/1.9.0/tarball",
+  "_id": "remote-edit@1.9.0",
+  "_inBundle": false,
+  "_integrity": "sha512-efAcIl4F5iOJMO75PGriaRRPB2+v/18AcY/YkprYmih02tJeVpmIsmIuYGMJJMU+vTOH/5t59SYQnNWDE6KAIw==",
+  "_location": "/remote-edit",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/remote-edit/versions/1.9.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/remote-edit/versions/1.9.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/remote-edit/versions/1.9.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/remote-edit/versions/1.9.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/remote-edit/versions/1.9.0/tarball",
+  "_shasum": "f75b0030957bb98178ad2dcfd5a6386f8ed673c3",
+  "_spec": "https://www.atom.io/api/packages/remote-edit/versions/1.9.0/tarball",
+  "_where": "C:\\Users\\KJONES~1\\AppData\\Local\\Temp\\apm-install-dir-119924-15396-7i8i37.nmvxd",
+  "author": {
+    "name": "Sverre Aleksandersen",
+    "email": "sverre.aleksandersen@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/sveale/remote-edit/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "async": "<2.0.0",
+    "atom-space-pen-views": "^2.0.3",
+    "file-size": ">=0.0.5",
+    "fs-plus": ">=2.2.3",
+    "ftp": ">=0.3.7",
+    "keytar": "~3.0.0",
+    "mkdirp": "~0.5.1",
+    "moment": ">=2.7.0",
+    "osenv": ">=0.1.0",
+    "q": ">=1.0.1",
+    "serializable": ">=1.0.0",
+    "ssh2": "~0.4.7",
+    "string-hash": ">=1.1.0",
+    "temp": ">=0.8.3",
+    "underscore-plus": ">=1.5.0",
+    "upath": "~0.1.6"
+  },
+  "deprecated": false,
+  "description": "Browse and edit remote files using SFTP and FTP",
+  "devDependencies": {
+    "temp": "*"
+  },
+  "engines": {
+    "atom": ">=1.2.3 <2.0.0"
+  },
+  "homepage": "https://github.com/sveale/remote-edit",
+  "keywords": [
+    "atom",
+    "package",
+    "sftp",
+    "ssh",
+    "scp",
+    "ftp",
+    "remote",
+    "edit",
+    "sync"
+  ],
+  "license": "MIT",
+  "main": "./lib/main.coffee",
+  "name": "remote-edit",
+  "optionalDependencies": {
+    "keytar": "~3.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sveale/remote-edit.git"
+  },
+  "version": "1.9.0"
+}

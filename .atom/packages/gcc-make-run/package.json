@@ -1,0 +1,52 @@
+{
+  "_from": "https://www.atom.io/api/packages/gcc-make-run/versions/0.2.12/tarball",
+  "_id": "gcc-make-run@0.2.12",
+  "_inBundle": false,
+  "_integrity": "sha512-ip4TPLJ4DFXnW421uWBSSg0zfXzDq1DZfAJ5bPWRK2/60O5jbGwxiWa4IuN/KbS1p8KMEC+mvZNNUKLwU2phbA==",
+  "_location": "/gcc-make-run",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/gcc-make-run/versions/0.2.12/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/gcc-make-run/versions/0.2.12/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/gcc-make-run/versions/0.2.12/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/gcc-make-run/versions/0.2.12/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/gcc-make-run/versions/0.2.12/tarball",
+  "_shasum": "c7e689814b72a7d64af09831b3265f3e9649832d",
+  "_spec": "https://www.atom.io/api/packages/gcc-make-run/versions/0.2.12/tarball",
+  "_where": "C:\\Users\\KJONES~1\\AppData\\Local\\Temp\\apm-install-dir-119923-20648-igul79.9bukj",
+  "bugs": {
+    "url": "https://github.com/tomlau10/gcc-make-run/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "atom-space-pen-views": "^2.0.3"
+  },
+  "deprecated": false,
+  "description": "Compile-run C/C++ source code and execute Makefile in Atom.",
+  "engines": {
+    "atom": ">=1.0.0"
+  },
+  "homepage": "https://github.com/tomlau10/gcc-make-run#readme",
+  "keywords": [
+    "gcc",
+    "g++",
+    "c++",
+    "compile",
+    "make",
+    "run"
+  ],
+  "license": "MIT",
+  "main": "./lib/gcc-make-run",
+  "name": "gcc-make-run",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomlau10/gcc-make-run.git"
+  },
+  "version": "0.2.12"
+}

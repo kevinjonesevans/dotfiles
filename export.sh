@@ -5,3 +5,5 @@ cp ~/.gitconfig ./.gitconfig
 cp ~/.tmux.conf ./.tmux.conf
 cp ~/.zshenv ./.zshenv
 cp ~/.zshrc ./.zshrc
+cp ~/.atom ./.atom
+cp ~/.vscode ./.vscode

@@ -1,0 +1,77 @@
+{
+  "_from": "https://www.atom.io/api/packages/gpp-compiler/versions/3.0.7/tarball",
+  "_id": "gpp-compiler@3.0.7",
+  "_inBundle": false,
+  "_integrity": "sha512-GTQyuDEfOQU1mMQx4NPafBM7UQoaeXk00RwabH276q5ivPnLUZBv91hgnvAgSd+hTp3Dv2iELXoChSS+XcRhYQ==",
+  "_location": "/gpp-compiler",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/gpp-compiler/versions/3.0.7/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/gpp-compiler/versions/3.0.7/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/gpp-compiler/versions/3.0.7/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/gpp-compiler/versions/3.0.7/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/gpp-compiler/versions/3.0.7/tarball",
+  "_shasum": "c045086f4f01a9f0d6630661a15795dcfc5dd81c",
+  "_spec": "https://www.atom.io/api/packages/gpp-compiler/versions/3.0.7/tarball",
+  "_where": "C:\\Users\\KJONES~1\\AppData\\Local\\Temp\\apm-install-dir-119817-64592-mmlm5b.l8w19",
+  "author": {
+    "name": "kriscross07"
+  },
+  "bugs": {
+    "url": "https://github.com/kriscross07/atom-gpp-compiler/issues"
+  },
+  "bundleDependencies": false,
+  "contributors": [
+    {
+      "name": "kriscross07"
+    },
+    {
+      "name": "PoVa"
+    },
+    {
+      "name": "LinuxMercedes"
+    },
+    {
+      "name": "farnabaz"
+    },
+    {
+      "name": "sylxjtu"
+    }
+  ],
+  "dependencies": {},
+  "deprecated": false,
+  "description": "Compile and run C and C++ within Atom",
+  "devDependencies": {
+    "eslint": "3.0.1"
+  },
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/kriscross07/atom-gpp-compiler#readme",
+  "keywords": [
+    "compile",
+    "c++",
+    "c",
+    "g++",
+    "gcc",
+    "mingw",
+    "xcode"
+  ],
+  "license": "MIT",
+  "main": "./index.js",
+  "name": "gpp-compiler",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kriscross07/atom-gpp-compiler.git"
+  },
+  "scripts": {
+    "test": "eslint index.js"
+  },
+  "version": "3.0.7"
+}

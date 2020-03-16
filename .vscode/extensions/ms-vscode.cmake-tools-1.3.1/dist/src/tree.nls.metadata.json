@@ -1,0 +1,31 @@
+{
+	"messages": [
+		"Open file",
+		"Interface library",
+		"Utility",
+		"Object library",
+		"Target {0}",
+		"launch",
+		"default",
+		"There was an issue rendering this item. This is a bug",
+		"Empty project",
+		"Update project with mismatching name property",
+		"Updating code model on folder that does not yet exist?",
+		"Error while rendering children nodes"
+	],
+	"keys": [
+		"open.file",
+		"interface.library",
+		"utility",
+		"object.library",
+		"target.tooltip",
+		"launch.tooltip",
+		"default.tooltip",
+		"item.render.issue",
+		"empty.project",
+		"update.project.with.mismatch",
+		"error.update.code.model.on.nonexist.folder",
+		"error.rendering.children.nodes"
+	],
+	"filePath": "src\\tree"
+}

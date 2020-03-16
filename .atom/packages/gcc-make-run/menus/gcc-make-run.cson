@@ -1,0 +1,18 @@
+# See https://atom.io/docs/latest/hacking-atom-package-word-count#menus for more details
+'context-menu':
+  'atom-text-editor': [
+    {
+      'label': 'Compile Run'
+      'command': 'gcc-make-run:compile-run'
+    },
+    {
+      'label': 'Toggle Run Options'
+      'command': 'gcc-make-run:run-options'
+    }
+  ],
+  '.tree-view .file > .name': [
+    {
+      'label': 'Make Run',
+      'command': 'gcc-make-run:make-run'
+    }
+  ]

@@ -1,0 +1,44 @@
+{
+  "_from": "https://www.atom.io/api/packages/remote-atom/versions/1.3.12/tarball",
+  "_id": "remote-atom@1.3.12",
+  "_inBundle": false,
+  "_integrity": "sha512-e9eR6Ou+qdqzw18P8ZHZ1niJ5K9GWRAEFpzdb1PKPxuxjODcrbYsgOYkfp1q7HXYXHM9dntFPGjBqc4hZwSn7Q==",
+  "_location": "/remote-atom",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/remote-atom/versions/1.3.12/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/remote-atom/versions/1.3.12/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/remote-atom/versions/1.3.12/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/remote-atom/versions/1.3.12/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/remote-atom/versions/1.3.12/tarball",
+  "_shasum": "1ec49e26b57b983fa5f31494294a467cf06c4eb9",
+  "_spec": "https://www.atom.io/api/packages/remote-atom/versions/1.3.12/tarball",
+  "_where": "C:\\Users\\KJONES~1\\AppData\\Local\\Temp\\apm-install-dir-119924-3732-xuyrjs.u40zr",
+  "bugs": {
+    "url": "https://github.com/randy3k/remote-atom/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "mkdirp": "~0.5.0"
+  },
+  "deprecated": false,
+  "description": "Edit file directly via SSH, rmate for Atom.",
+  "engines": {
+    "atom": ">=0.196.0"
+  },
+  "homepage": "https://github.com/randy3k/remote-atom#readme",
+  "license": "MIT",
+  "main": "./lib/remote-atom",
+  "name": "remote-atom",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/randy3k/remote-atom.git"
+  },
+  "version": "1.3.12"
+}
